@@ -1,0 +1,17 @@
+{
+  "name": "react-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {    
+    "server": "npm run dev --prefix server",
+    "client": "npm run start --prefix client",
+    "start": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.1",
+    "nanoid": "^3.1.25"
+  }
+}
